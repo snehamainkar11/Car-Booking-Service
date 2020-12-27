@@ -1,0 +1,76 @@
+<section id="team" class="team section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Car Size</h2>
+        <p>Please select car size.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+            <div ><img src="assets/img/suv-mini.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4><a routerLink="price"  class="size" (click)="getCar('Suv Mini Car,200')" >{{car.suv.name}}</a></h4>
+              <span class="price">{{car.suv.price}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+            <div class><img src="assets/img/coupe-mini.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4><a routerLink="price"  class="size"  (click)="getCar('Coupe Mini Car,250')">{{car.coupe.name}}</a></h4>
+              <span class="price">{{car.coupe.price}}</span>           
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-6 mt-4 mt-lg-05">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+            <div ><img src="assets/img/picup-mini.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4><a routerLink="price"  class="size"  (click)="getCar('Picup Mini Car,150')">{{car.picup.name}}</a></h4>
+              <span class="price">{{car.picup.price}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-05">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+            <div class><img src="assets/img/mini-mini.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4><a routerLink="price"  class="size"  (click)="getCar('Mini Car,150')">{{car.mini.name}}</a></h4>
+              <span class="price">{{car.mini.price}}</span>           
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="row">
+        <div class="col-lg-6 mt-4 mt-lg-05">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+            <div ><img src="assets/img/convert-mini.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4><a routerLink="price"  class="size"  (click)="getCar('Convertible Mini Car,300')">{{car.convert.name}}</a></h4>
+              <span class="price">{{car.convert.price}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-05">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+            <div class><img src="assets/img/sedan-mini.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4><a routerLink="price" class="size"  (click)="getCar('Sedan Car,350')">{{car.sedan.name}}</a></h4>
+              <span class="price">{{car.sedan.price}}</span>           
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     </section> 
