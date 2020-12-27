@@ -13,17 +13,18 @@ const routes: Routes = [
     component:ServicesComponent
   },
   {
-    path:"services/carsize",
+    path:"carsize",
     component:CarsizeComponent
   },
   {
-    path:"services/carsize/price",
+    path:"price",
     component:PriceComponent
   },
   {
     path:"contact",
     component:ContactComponent
-  }
+  },
+ 
     
 ];
 

@@ -27,8 +27,12 @@ export class ServicesComponent implements OnInit {
   onItemSelector(value :any) {
     console.log(value);
     this.service=value
-    this.router.navigate(['./services/carsize'],{queryParams:{data:btoa(JSON.stringify(this.service))}
+
+    this.router.navigate(['./carsize'],{queryParams:{data:btoa(JSON.stringify(this.service))}
+
   });
+  document.getElementById("team").scrollIntoView();
+
     }
    
 }

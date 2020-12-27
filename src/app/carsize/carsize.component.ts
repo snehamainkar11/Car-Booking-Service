@@ -23,12 +23,12 @@ export class CarsizeComponent implements OnInit {
   }
   
    car ={
-   suv : {name: "Suv Mini Car",price :200},
-    coupe:{name:"Coupe Mini Car",price:250},
-    picup:{name:"Picup Mini Car",price:150},
-    mini:{name :"Mini Car",price:150},
-    convert:{name:"Convertible Mini Car",price:300},
-    sedan:{name:"Sedan  Car",price:350}
+   suv : {name: "Suv Mini Car",price :"200 Rs"},
+    coupe:{name:"Coupe Mini Car",price:"250 Rs"},
+    picup:{name:"Picup Mini Car",price:"150 Rs"},
+    mini:{name :"Mini Car",price:"150 Rs"},
+    convert:{name:"Convertible Mini Car",price:"300 Rs"},
+    sedan:{name:"Sedan  Car",price:"350 Rs"}
   }
  
 
@@ -39,7 +39,9 @@ export class CarsizeComponent implements OnInit {
     this.price=(value[1])
     console.warn(this.carsize)
     console.warn(this.price)
-   this.router.navigate(['./services/carsize/price'],{queryParams:{data:btoa(JSON.stringify([this.carsize,this.price,this.service]))}
+   this.router.navigate(['./price'],{queryParams:{data:btoa(JSON.stringify([this.carsize,this.price,this.service]))}
  });
+  document.getElementById("pricing").scrollIntoView();
+
   }  
 }
